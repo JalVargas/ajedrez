@@ -1,0 +1,33 @@
+*{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{ 
+    
+    background-repeat: no-repeat;
+    background-position:center;
+    text-align: center;
+}
+button{
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+
+}
+input{ 
+    width: 150px;
+    text-align: center;
+}
+@media(max-width:600px){
+
+}img{
+    width: 600px;
+    height: 600px;
+    
+  }
+  select{
+    width: 150px;
+    background-size: center;
+    text-align: center;
+  }
