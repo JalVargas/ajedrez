@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script src="./ajedrez2.js" defer></script>
+  <meta charset="UTF-8">
+  <title>AJEDREZ-inicio</title>
+  <link rel="stylesheet" href="./ajedrez2.css">
+</head>
+
+<body>
+<header>
+  <h1>JUEGO DE MESA</h1>
+  <h2>Creado por Jalinson Vargas</h2>
+</header>
+ <main>
+ <div class="tablero"> 
+  <div class="dentro del bloque"></div>
+     <img src="fondo.png" class="fondo">
+     
+    <div class="casilla"><img src="imagenes/torre negra.png"></div>
+    <div class="casilla"><img src="imagenes/caballo negro.png"></div>
+    <div class="casilla"><img src="imagenes/alfin negro.png"></div>
+    <div class="casilla"><img src="imagenes/reina negra.png"></div>
+    <div class="casilla"><img src="imagenes/rey negro.png"></div>
+    <div class="casilla"><img src="imagenes/alfin negro.png"></div>
+    <div class="casilla"><img src="imagenes/caballo negro.png"></div>
+    <div class="casilla"><img src="imagenes/torre negra.png"></div>
+ </div>
+</main>
+<section>
+ <footer>
+  <div class="registro">
+    
+    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+    <label for="fichas">Elige tu color:</label>
+    <select name="fichas" id="fichas">
+      <option value="negro">Negro</option>
+      <option value="blanco">Blanco</option>
+    </select>
+
+    <button id="guardarJugador">Guardar</button>
+   </div>
+ </footer>
+ </section>
+  <ul id="listaJugadores"></ul>
+
+  
+</body>
+</html>

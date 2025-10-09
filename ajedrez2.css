@@ -1,13 +1,19 @@
 *{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+   margin: 0;
+   padding: 0;
+}
+@media(max-width:37.5rem){
+
 }
 body{ 
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-repeat: no-repeat;
     background-position:center;
     text-align: center;
+    min-height: 100vh;
 }
 button{
     cursor: pointer;
@@ -19,15 +25,34 @@ input{
     width: 150px;
     text-align: center;
 }
-@media(max-width:600px){
 
-}img{
-    width: 600px;
-    height: 600px;
-    
-  }
   select{
     width: 150px;
     background-size: center;
     text-align: center;
+  }
+  .tablero{
+    width: 550px;
+    height: 550px;
+    display: grid;
+    border:  3px solid black;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .casilla{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 0;
+    
+  }
+  .casilla img { 
+    width: 4rem;
+    pointer-events: none;
+
+  }
+  .fondo {
+    position:fixed;
+    width: 37.5rem;
+    z-index: -1;
   }
