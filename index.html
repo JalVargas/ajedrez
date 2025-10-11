@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <script src="./ajedrez2.js" defer></script>
   <meta charset="UTF-8">
@@ -8,46 +9,36 @@
 </head>
 
 <body>
-<header>
-  <h1>JUEGO DE MESA</h1>
-  <h2>Creado por Jalinson Vargas</h2>
-</header>
- <main>
- <div class="tablero"> 
-  
-     <img src="fondo.png" class="fondo">
-     
-     
-    <div class="casilla"><img src="imagenes/torre negra.png"></div>
-    <div class="casilla"><img src="imagenes/caballo negro.png"></div>
-    <div class="casilla"><img src="imagenes/alfin negro.png"></div>
-    <div class="casilla"><img src="imagenes/reina negra.png"></div>
-    <div class="casilla"><img src="imagenes/rey negro.png"></div>
-    <div class="casilla"><img src="imagenes/alfin negro.png"></div>
-    <div class="casilla"><img src="imagenes/caballo negro.png"></div>
-    <div class="casilla"><img src="imagenes/torre negra.png"></div>
-    
- </div>
- 
-</main>
-<footer>
- <section>
-  <div class="registro">
-    
-    <input type="" id="nombre" placeholder="Ingrese su nombre">
+  <header>
+    <h1>JUEGO DE MESA</h1>
+    <h2>Creado por Jalinson Vargas</h2>
+  </header>
+  <main>
+    <div>
+      <div class="tablero">
+      </div>
+  </main>
+  <footer>
+    <section>
+      <div class="registro">
 
-    <label for="fichas">Elige tu color:</label>
-    <select name="fichas" id="fichas">
-      <option value="negro">Negro</option>
-      <option value="blanco">Blanco</option>
-    </select>
+        <input type="" id="nombre" placeholder="Ingrese su nombre">
 
-    <button id="guardarJugador">Guardar</button>
-   </div>
-  </section>
-</footer>
+        <label for="fichas">Elige tu color:</label>
+        <select name="fichas" id="fichas">
+          <option value="negro">Negro</option>
+          <option value="blanco">Blanco</option>
+        </select>
+
+        <button id="guardarJugador">Guardar</button>
+      </div>
+    </section>
+  </footer>
   <ul id="listaJugadores"></ul>
+  <button type="button" onclick="limpiar()">Nuevo Jugador</button>
 
-  
+
+
 </body>
+
 </html>

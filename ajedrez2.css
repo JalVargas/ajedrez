@@ -31,40 +31,23 @@ input{
     width: 600px;
     height: 600px;
     display: grid;
-    border:  3px solid black;
+    border:  5px solid black;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-   
-  }
-  
-  .dentro {
-    width: 550px;
-    height: 550px;
-
-  }
-  .casilla{
-    justify-items: center;
-    align-items: center;
-    font-size:large;
-    img {
-  mix-blend-mode: multiply;
-}
-    
-  }
-  .casilla img { 
+    background-image: url(fondo1.jpg);
+    box-sizing: border-box;
+    background-position: center;
+    background-size:cover;
+  }    
+  .casilla img {
     width: 4rem;
+    height: 4rem;
+    object-fit: contain;
     pointer-events: none;
-
-  }
-  .fondo {
-    position:fixed;
-    width: 37.5rem;
-    z-index: -1;
+    cursor: all-scroll;
   }
     select{
     width: 150px;
     background-size: center;
     text-align: center;
     }
-    
-    
