@@ -44,7 +44,7 @@ input{
     height: 4rem;
     object-fit: contain;
     pointer-events: none;
-    cursor: all-scroll;
+    cursor:ew-resize;
   }
     select{
     width: 150px;
