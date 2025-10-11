@@ -1,53 +1,56 @@
-*{
-   margin: 0;
-   padding: 0;
-}
-@media(max-width:37.5rem)
-{
-
-}
-body{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-position:center;
-    text-align: center;
-    min-height: 100vh;
-}
-button{
-    cursor: pointer;
-    width: 150px;
-    border-radius: 5px;
-
-}
-input{ 
-    width: 150px;
-    text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-  .tablero{
-    width: 600px;
-    height: 600px;
-    display: grid;
-    border:  5px solid black;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    background-image: url(fondo1.jpg);
-    box-sizing: border-box;
-    background-position: center;
-    background-size:cover;
-  }    
-  .casilla img {
-    width: 4rem;
-    height: 4rem;
-    object-fit: contain;
-    pointer-events: none;
-    cursor:ew-resize;
-  }
-    select{
-    width: 150px;
-    background-size: center;
-    text-align: center;
-    }
+@media(max-width:37.5rem) {}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  width: 150px;
+  border-radius: 5px;
+
+}
+
+input {
+  width: 150px;
+  text-align: center;
+}
+
+.tablero {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  border: 5px solid black;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background-image: url(fondo1.jpg);
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+}
+
+.casilla img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  pointer-events: none;
+  cursor: ew-resize;
+}
+
+select {
+  width: 150px;
+  background-size: center;
+  text-align: center;
+}

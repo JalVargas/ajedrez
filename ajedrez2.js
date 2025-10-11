@@ -48,24 +48,24 @@ for (let i = 0; i < 64; i++) {
   tablero.appendChild(casilla);
 }
 const piezas = [
-  "torre_negra","caballo_negro","alfin_negro","reina_negra","rey_negro","alfin_negro","caballo_negro","torre_negra","peon_negro","peon_negro","peon_negro","peon_negro","peon_negro","peon_negro","peon_negro","peon_negro",
+  "torre_negra", "caballo_negro", "alfin_negro", "reina_negra", "rey_negro", "alfin_negro", "caballo_negro", "torre_negra", "peon_negro", "peon_negro", "peon_negro", "peon_negro", "peon_negro", "peon_negro", "peon_negro", "peon_negro",
 
   ...Array(32).fill(""),
 
-   "peon_blanco","peon_blanco","peon_blanco","peon_blanco","peon_blanco","peon_blanco","peon_blanco","peon_blanco","torre_blanca","caballo_blanco","alfin_blanco","reina_blanca","rey_blanco","alfin_blanco","caballo_blanco","torre_blanca"
+  "peon_blanco", "peon_blanco", "peon_blanco", "peon_blanco", "peon_blanco", "peon_blanco", "peon_blanco", "peon_blanco", "torre_blanca", "caballo_blanco", "alfin_blanco", "reina_blanca", "rey_blanco", "alfin_blanco", "caballo_blanco", "torre_blanca"
 ];
 const casilla = document.querySelectorAll('.casilla');
-piezas.forEach ((pieza, i) => {
-  if (pieza !==""){
-    const img =document.createElement('img');
-    img.src=`imagenes/${pieza}.png`;
+piezas.forEach((pieza, i) => {
+  if (pieza !== "") {
+    const img = document.createElement('img');
+    img.src = `imagenes/${pieza}.png`;
     casilla[i].appendChild(img);
   }
 });
-const botonLimpiar =document.getElementById("limpiar");
-boronlimpiar.addEventListener("click",()=>{
+const botonLimpiar = document.getElementById("limpiar");
+boronlimpiar.addEventListener("click", () => {
   localStorage.removeItem("jugadores");
-  lista.innerHTML="";
+  lista.innerHTML = "";
   console.info("Nuevo Jugador");
 });
- 
+
