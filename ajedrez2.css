@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+.creepster-regular {
+  font-family: "Creepster";
+}
+:root{
+  --fuente-principal:"Creepster", system-ui;
+}
+
+
+
 @media(max-width:37.5rem) {}
 
 body {
@@ -14,18 +23,21 @@ body {
   background-position: center;
   text-align: center;
   min-height: 100vh;
+  font-family: var(--fuente-principal);
 }
+
 
 button {
   cursor: pointer;
   width: 150px;
   border-radius: 5px;
-
+  font-family: var(--fuente-principal);
 }
 
 input {
   width: 150px;
   text-align: center;
+  font-family: var(--fuente-principal);
 }
 
 .tablero {
@@ -53,4 +65,6 @@ select {
   width: 150px;
   background-size: center;
   text-align: center;
+  cursor: grab;
+  font-family: var(--fuente-principal);
 }

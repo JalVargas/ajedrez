@@ -2,9 +2,12 @@
 <html lang="es">
 
 <head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+  </style>
   <script src="./ajedrez2.js" defer></script>
   <meta charset="UTF-8">
-  <title>AJEDREZ-inicio</title>
+  <title> ♟️ AJEDREZ-inicio</title>
   <link rel="stylesheet" href="./ajedrez2.css">
 </head>
 
@@ -15,14 +18,14 @@
   </header>
   <main>
     <div>
-      <div class="tablero">
+      <div class="tablero"></div>
       </div>
   </main>
   <footer>
     <section>
       <div class="registro">
 
-        <input type="" id="nombre" placeholder="Ingrese su nombre">
+        <input type="text" id="nombre" placeholder="Ingrese su nombre">
 
         <label for="fichas">Elige tu color:</label>
         <select name="fichas" id="fichas">
@@ -33,9 +36,10 @@
         <button id="guardarJugador">Guardar</button>
       </div>
     </section>
-  </footer>
-  <ul id="listaJugadores"></ul>
+     <ul id="listaJugadores"></ul>
   <button type="button" onclick="limpiar()">Nuevo Jugador</button>
+  </footer>
+ 
 
 
 
