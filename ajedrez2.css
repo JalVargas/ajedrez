@@ -3,9 +3,9 @@
   padding: 0;
 }
 
-.creepster-regular {
-  font-family: "Creepster";
-}
+/* .creepster-regular {
+  font-family: "Creepster"; */
+/* } */
 :root{
   --fuente-principal:"Creepster", system-ui;
 }
