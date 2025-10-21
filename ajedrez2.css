@@ -53,7 +53,7 @@ input {
   width: 600px;
   height: 600px;
   display: grid;
-  border: 5px solid black;
+  border: 10px solid black;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   background-image: url(fondo1.jpg);
@@ -64,31 +64,26 @@ input {
 }
 
 .casilla img {
-  width: 4rem;
-  height: 4rem;
+ height: 4rem;
+ width: 4rem;
   object-fit: contain;
-  cursor:auto;
-
-
-
- 
-      &:active{
-    transform: scale(0.80);
-      }
-
-  }
-  .casilla img :hover,
-.castilla img :focus{
-  box-shadow: 0 20px rgba(0, 0, 0, 0.4);
-  transform: scale(1.08);
+  pointer-events: all;
+  cursor: pointer;
+  transition: all 0.06s;
 
 }
-  
 
+ 
+      .casilla img:hover,:focus & :active {
+    transform: scale(1.10);
+    border: none;
+    background-color: transparent;
+
+      } 
+  
 select {
   width: 150px;
   background-size: center;
   text-align: center;
-  cursor: grab;
-  
+  cursor: pointer;  
 }
