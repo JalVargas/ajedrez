@@ -24,15 +24,6 @@ body {
   background-position: center;
   text-align: center;
   min-height: 100vh;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  transition: transform 0.2s ease-out;
-
-   hover {
-    transform: rotatey (5deg) rotateX(5deg) scale(1.03);
-
-  }
-  
 }
 
 
