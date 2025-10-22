@@ -7,8 +7,8 @@
 /* .creepster-regular {
   font-family: "Creepster"; */
 /* } */
-:root{
-  --fuente-principal:"Creepster", system-ui;
+:root {
+  --fuente-principal: "Creepster", system-ui;
 }
 
 
@@ -31,13 +31,13 @@ button {
   cursor: pointer;
   width: 150px;
   border-radius: 5px;
- 
+
 }
 
 input {
   width: 150px;
   text-align: center;
- 
+
 }
 
 .tablero {
@@ -55,8 +55,8 @@ input {
 }
 
 .casilla img {
- height: 4rem;
- width: 4rem;
+  height: 4rem;
+  width: 4rem;
   object-fit: contain;
   pointer-events: all;
   cursor: pointer;
@@ -64,17 +64,17 @@ input {
 
 }
 
- 
-      .casilla img:hover,:focus & :active {
-    transform: scale(1.10);
-    border: none;
-    background-color: transparent;
+.casilla img:hover,
+:focus & :active {
+  transform: scale(1.10);
+  border: none;
+  background-color: transparent;
 
-      } 
-  
+}
+
 select {
   width: 150px;
   background-size: center;
   text-align: center;
-  cursor: pointer;  
+  cursor: pointer;
 }
